@@ -1,0 +1,13 @@
+
+<ion-view view-title="Search">
+  <ion-content>
+    <ion-content ng-controller="FeedCtrl" ng-init="init()">
+                <div class="list">
+                    <div ng-repeat="entry in entries" class="item">
+                        <b>{{entry.title}}</b><br>
+                        <span ng-bind-html="entry.contentSnippet"></span>
+                    </div>
+                </div>
+            </ion-content>
+  </ion-content>
+</ion-view>

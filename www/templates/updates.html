@@ -1,0 +1,30 @@
+<ion-view view-title="Browse">
+  <ion-content>
+    <div class="list card" ng-repeat="new in news">
+      <div class="item item-text-wrap item-icon-left">
+        <i class="icon ion-paper-airplane"></i>
+            {{new.head}}
+      </div>
+      <div class="item item-body">
+        <img class="full-image" src="delorean.jpg">
+        <p>
+          {{new.desc}}
+        </p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

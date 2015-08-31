@@ -1,0 +1,42 @@
+  <ion-view class="pane">
+  <ion-content padding="true" class="has-header has-footer" class="login">
+    <center>  <h1 class="logo">Upes Seg</h1>
+      <p class="logo">Students Chapter</p><center>
+          <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Full Name" data-ng-model="user.fullname">
+            </label>
+            <label class="item item-input">
+                <input type="tel" placeholder="Phone No" data-ng-model="user.phone">
+            </label>
+            <label class="item item-input">
+                <input type="number" placeholder="SAP ID" data-ng-model="user.sap">
+            </label>
+          </div>
+          <div class="list">
+            <label class="item item-input item-select">
+              <div class="input-label">
+                  Branch
+                </div>
+                <select data-ng-options="o.name for o in options1" data-ng-model="user.branch">
+                  <option value="GIE">GIE</option>
+                  <option value="GSE">GSE</option>
+                  <option value="CSEOGI">CSEOGI</option></select>
+                </select>
+              </label>
+              <label class="item item-input item-select">
+                <div class="input-label">
+                    Year
+                  </div>
+                  <select data-ng-options="o.name for o in options2" data-ng-model="user.year">
+                  <option value="2015-2019">2015-2019</option>
+                  <option value="2014-2018">2014-2018</option>
+                  <option value="2013-2017">2013-2017</option>
+                  <option value="2012-2016">2012-2016</option></select>
+                </label>
+            </div>
+        </div>
+        <button class="button button-positive button-icon button-block  icon-left ion-social-googleplus" ng-click="login('google')">Login Using Gmail</button>
+      <div class="tnc">  Hello! {{user.fullname}} By Clicking on Login you are accepting all the Terms and Conditions.<div>
+    </ion-content>
+</ion-view>
